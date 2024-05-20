@@ -1,0 +1,146 @@
+/* Variables de colores */
+$color-fondo: #222; /* Fondo oscuro */
+$color-texto: #fff; /* Texto blanco */
+$color-primario: #ff5733; /* Naranja */
+$color-secundario: #ffc300; /* Amarillo */
+$color-terciario: #0f3057; /* Azul oscuro */
+$color-destacado: #ff3860; /* Rosa */
+$color-iconos: #ccc; /* Iconos gris */
+$color-separador: #444; /* Separador gris oscuro */
+
+/* Estilos para WelcomePage */
+.welcome-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: $color-fondo;
+  color: $color-texto;
+
+  &__content {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__logo-icon {
+    height: 150px;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+
+  &__actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  &__button-link {
+    text-decoration: none;
+  }
+
+  &__button {
+    background-color: $color-primario;
+    color: $color-texto;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+      background-color: $color-destacado;
+      transform: scale(1.05);
+    }
+
+    &--register {
+      background-color: $color-secundario;
+    }
+
+    &--login {
+      background-color: $color-terciario;
+    }
+  }
+
+  &__icon {
+    margin-right: 10px;
+    margin-bottom: 5px; /* Ajuste para separar el icono del texto */
+    color: $color-iconos;
+  }
+
+  &__footer {
+    width: 100%;
+    background-color: $color-terciario;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  &__footer-content {
+    font-size: 1.2em;
+    color: $color-texto;
+    margin-bottom: 10px;
+  }
+
+  .social-icons {
+    margin-top: 10px;
+
+    .social-icon {
+      font-size: 1.5em;
+      margin: 0 10px;
+      color: $color-texto;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $color-destacado;
+      }
+    }
+  }
+
+  &__feature {
+    background-color: $color-destacado;
+    color: $color-texto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 40px;
+    width: 80%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    &__title {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    &__description {
+      font-size: 1.2em;
+    }
+  }
+
+  &__separator {
+    width: 50%;
+    height: 2px;
+    background-color: $color-separador;
+    margin: 20px 0;
+  }
+}

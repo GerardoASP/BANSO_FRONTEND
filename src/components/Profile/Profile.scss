@@ -1,0 +1,213 @@
+.profile-container {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f5f7;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .profile-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .profile-info {
+      text-align: center;
+      padding: 20px;
+      border-radius: 15px;
+      background-color: #fff;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      width: 100%;
+
+      .profile-image {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        position: relative;
+        background-color: #f0f0f0;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        .edit-icon {
+          position: absolute;
+          bottom: 10px;
+          right: 10px;
+          background-color: #007bff;
+          color: #fff;
+          border: none;
+          border-radius: 50%;
+          padding: 5px;
+          cursor: pointer;
+          transition: all 0.3s ease;
+
+          &:hover {
+            background-color: #0056b3;
+          }
+        }
+      }
+
+      h2 {
+        margin-bottom: 10px;
+        color: #333;
+        font-size: 24px;
+      }
+
+      p {
+        margin-bottom: 10px;
+        color: #777;
+        font-size: 16px;
+      }
+    }
+
+    .back-icon {
+      svg {
+        font-size: 24px;
+        color: #333;
+        cursor: pointer;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #007bff;
+        }
+      }
+    }
+  }
+
+  .profile-details {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+
+    h3 {
+      margin-bottom: 20px;
+      color: #333;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .input-group {
+        margin-bottom: 15px;
+
+        .icon {
+          margin-right: 10px;
+          color: #007bff;
+          font-size: 20px;
+        }
+
+        input {
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-size: 16px;
+          transition: border-color 0.3s ease;
+
+          &:focus {
+            outline: none;
+            border-color: #007bff;
+          }
+        }
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+    }
+  }
+
+  .profile-projects {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+
+    h3 {
+      margin-bottom: 20px;
+      color: #333;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .project-card {
+      display: inline-block;
+      width: 200px;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin: 0 10px;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+
+      h4 {
+        margin-bottom: 10px;
+        color: #333;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      p {
+        color: #777;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #128c7e;
+    }
+  }
+}
