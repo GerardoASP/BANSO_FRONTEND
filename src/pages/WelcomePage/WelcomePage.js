@@ -34,6 +34,15 @@ const WelcomePage = () => {
       </div>
       <div className='welcome-page__footer'>
         <div className='welcome-page__footer-content'>
+          Desarrollado por : Gerardo Antonio Sánchez Pinilla y Jhonatan Tamayo Suarez
+        </div>
+        <div className='welcome-page__footer-content'>
+          Asignatura:Proyecto de Desarrollo de Software
+        </div>
+        <div className='welcome-page__footer-content'>
+          2024-01
+        </div>
+        <div className='welcome-page__footer-content'>
           Síguenos en nuestras redes sociales:
         </div>
         <div className='social-icons'>

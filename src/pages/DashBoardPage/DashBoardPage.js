@@ -72,6 +72,9 @@ const DashboardPage = () => {
       <div className='main-content'>
         <h1>Bienvenido a tu Banco de Proyectos</h1>
         <p>Explora las opciones disponibles en el menú lateral para acceder a diferentes secciones y funcionalidades.</p>
+        <p>Desarrollado por: Gerardo Antonio Sanchez Pinilla y Jhonatan Tamayo Suarez</p>
+        <p>Asignatura:Proyecto De Desarrollado de Software</p>
+        <p>2024-01</p>
         <div className='floating-buttons'>
           <Link to="/register-publication" className='create-publication-button'>
             <CampaignIcon className='create-icon' />
